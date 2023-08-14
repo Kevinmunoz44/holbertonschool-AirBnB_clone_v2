@@ -26,7 +26,7 @@ def c_is_fun(text):
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def python_is_cool(text):
+def python_is_cool(text='is cool'):
     text_format = text.replace('_', ' ')
     result = f'Python {text_format}'
     return result
