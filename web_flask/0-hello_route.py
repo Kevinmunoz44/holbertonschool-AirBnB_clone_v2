@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''Use the module of flask'''
 from flask import Flask
 '''
 Initializate this application with flask
