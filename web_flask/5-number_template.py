@@ -40,7 +40,7 @@ def number(n):
 
 @app.route('/number_template/<int:n>')
 def number_template(n):
-    content_html = f'<html><body><h1>Number: {n}</h1></body></html>'
+    content_html = f'<html><body><H1>Number: {n}</H1></body></html>'
     return content_html
 
 
