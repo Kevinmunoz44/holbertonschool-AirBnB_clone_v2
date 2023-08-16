@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Use the module of flask'''
-from flask import Flask
+from flask import Flask, render_template
 '''
 Initializate this application with flask
 '''
@@ -40,8 +40,7 @@ def number(n):
 
 @app.route('/number_template/<int:n>')
 def number_template(n):
-    content_html = f'<html><body><H1>Number: {n}</H1></body></html>'
-    return content_html
+    return render_template('5-number.html', number=n)
 
 
 if __name__ == '__main__':
