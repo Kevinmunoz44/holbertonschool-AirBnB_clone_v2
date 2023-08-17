@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-from flask import Flask, render_template
 """import class Flask, render_template method"""
+from flask import Flask, render_template
+'''
+Initializate this application with flask
+'''
 
 
 app = Flask(__name__)
