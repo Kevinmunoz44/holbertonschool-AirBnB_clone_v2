@@ -5,7 +5,12 @@
     </HEAD>
     <BODY>
         <H1>
-            {% if n is even|odd %}
+            {% if n is even %}
+                'even'
+            {% endif %}
+            {% if n is odd %}
+                'odd'
+            {% endif %}
             Number: {{number}}
         </H1>
     </BODY>
